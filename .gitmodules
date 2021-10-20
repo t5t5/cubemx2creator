@@ -1,0 +1,3 @@
+[submodule "3rdparty/qpe/qpe"]
+	path = 3rdparty/qpe/qpe
+	url = https://github.com/t5t5/qpe.git
