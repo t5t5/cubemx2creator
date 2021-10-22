@@ -18,6 +18,7 @@ UI_DIR = ./tmp/ui
 DESTDIR = $$QPE_C2C_BUILD_TEST_DIR
 
 LIBS += -L$$QPE_CORE_BUILD_DIR -lqpecore
+LIBS += -L$$QPE_C2C_BUILD_DIR -lqpe-c2c
 
 SOURCES += \
     test_makefile.cpp

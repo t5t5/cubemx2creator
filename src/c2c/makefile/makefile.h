@@ -17,8 +17,14 @@ class QPE_C2C_EXPORT Makefile
 {
 public:
 	Makefile();
+	Makefile(const Makefile& other);
 	~Makefile();
 
+	Makefile& operator=(const Makefile& other);
+
+	bool loadFrom(const QString& filename);
+
+	QMap<QString, QStringList> keys() const;
 private:
 	QSharedDataPointer<MakefileData> d;
 };
